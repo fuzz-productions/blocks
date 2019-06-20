@@ -1,5 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
+const Colors = require('../../colors/Colors.js');
 
 
 const Icon = (props) => {
@@ -26,7 +27,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   className: '',
   style: null,
-  fill: 'var(--primary-00)'
+  fill: Colors.Primary00
 };
 
 module.exports = Icon;

@@ -12,6 +12,7 @@ module.exports = {
     ButtonDanger: require('./dist/buttons/ButtonDanger.js'),
     ButtonDark: require('./dist/buttons/ButtonDark.js')
   },
+  Colors: require('./colors/Colors.js'),
   Dropdowns: {
     ComboBox: require('./dist/dropdowns/ComboBox.js'),
     Dropdown: require('./dist/dropdowns/Dropdown.js'),
