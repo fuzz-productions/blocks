@@ -1,6 +1,6 @@
 const variablesJson = require('../variables.json');
 
-const isIE = window ? window.navigator.userAgent.match(/(MSIE|Trident)/) : false;
+const isIE = (typeof window !== 'undefined') ? window.navigator.userAgent.match(/(MSIE|Trident)/) : false;
 
 function getColorValue(name) {
   const hexValue = variablesJson[`${name}-hex`];
