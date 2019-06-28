@@ -13,8 +13,6 @@ function getColorValue(name) {
   return color.replace(new RegExp(/\$(.*)hex/, 'gm'), hexValue);
 }
 
-// TODO: CSS vars not supported in IE
-// maybe try using css-vars-ponyfill
 const Colors = {};
 
 Colors.BRAND_00 = getColorValue('brand-00');
