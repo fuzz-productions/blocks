@@ -24,7 +24,7 @@ const ButtonTextIconExample = () => (
     <ButtonDark
       text="Exit"
       onClick={() => {}}
-      leftIcon={<CloseIcon fill={Colors.Secondary00} />}
+      leftIcon={<CloseIcon fill={Colors.SECONDARY_00} />}
     />
   </div>
 );

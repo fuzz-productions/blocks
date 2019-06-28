@@ -27,7 +27,7 @@ Icon.propTypes = {
 Icon.defaultProps = {
   className: '',
   style: null,
-  fill: Colors.Primary00
+  fill: Colors.PRIMARY_00
 };
 
 module.exports = Icon;

@@ -9,9 +9,9 @@ const { Colors } = require('blocks-react');
 const IconBaseExamples = () => (
   <div>
     <AddIcon />
-    <CloseIcon fill={Colors.Focus} />
-    <MoreIcon fill={Colors.Dark01} />
-    <MoreVerticalIcon fill={Colors.Warning} />
+    <CloseIcon fill={Colors.FOCUS} />
+    <MoreIcon fill={Colors.DARK_01} />
+    <MoreVerticalIcon fill={Colors.WARNING} />
   </div>
 );
 

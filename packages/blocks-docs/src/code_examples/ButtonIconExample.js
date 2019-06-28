@@ -20,7 +20,7 @@ const ButtonIconExample = () => (
     />
     <ButtonDark
       onClick={() => {}}
-      icon={<CloseIcon fill={Colors.Secondary00} />}
+      icon={<CloseIcon fill={Colors.SECONDARY_00} />}
     />
     <ButtonPrimary
       isDisabled
@@ -40,7 +40,7 @@ const ButtonIconExample = () => (
     <ButtonDark
       isDisabled
       onClick={() => {}}
-      icon={<DownIcon fill={Colors.Secondary00} />}
+      icon={<DownIcon fill={Colors.SECONDARY_00} />}
     />
   </div>
 );
