@@ -4,7 +4,7 @@ const { AddIcon,
         CloseIcon,
         MoreIcon,
         MoreVerticalIcon} = require('blocks-react').Icons;
-const { Colors } = require('blocks-react');
+const { Colors } = require('blocks-base');
 
 const IconBaseExamples = () => (
   <div>

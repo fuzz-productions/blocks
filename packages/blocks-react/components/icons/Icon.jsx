@@ -1,7 +1,6 @@
 const React = require('react');
 const PropTypes = require('prop-types');
-const Colors = require('../../colors/Colors.js');
-
+const Colors = require('blocks-base').Colors;
 
 const Icon = (props) => {
   const { children, ...other } = props;
