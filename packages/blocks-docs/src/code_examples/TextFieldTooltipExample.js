@@ -1,7 +1,7 @@
 import React, {Fragment} from "react"
 
 const { TextField } = require('blocks-react').Input;
-const { SuccessIcon, HelpIcon } = require('blocks-react').Icons;
+const { HelpIcon } = require('blocks-react').Icons;
 const { Tooltip } = require('blocks-react')
 
 
