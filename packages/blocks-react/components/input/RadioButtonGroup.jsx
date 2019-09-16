@@ -8,6 +8,8 @@ const RadioButtonGroup = props => (
   <div
     style={props.style}
     className={props.className}
+    role="radiogroup"
+    aria-label={props.label}
   >
     {
       props.options.map((option, idx) => (
@@ -33,7 +35,8 @@ RadioButtonGroup.propTypes = {
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.object),
   disabled: PropTypes.bool,
-  checkedIndex: PropTypes.number
+  checkedIndex: PropTypes.number,
+  label: PropTypes.string
 };
 
 RadioButtonGroup.defaultProps = {
@@ -41,7 +44,8 @@ RadioButtonGroup.defaultProps = {
   style: null,
   options: [],
   disabled: false,
-  checkedIndex: -1
+  checkedIndex: -1,
+  label: 'radio-group'
 };
 
 module.exports = RadioButtonGroup;
