@@ -4,18 +4,18 @@ const CloseIcon = require('../icons/CloseIcon.jsx');
 const classnames = require('classnames');
 
 const BaseModal = (props) => {
-  if (props.isHidden) return null;
+  if (isHidden) return null;
 
   return (
     <React.Fragment>
       <div
-        className="blx-modal-overlay"
-        onClick={props.onClose}
+        className={classnames('blx-modal-overlay', props.overlayClassName)}
+        onClick={onClose}
       />
       <div className={classnames('blx-modal', props.className)} style={props.style}>
         {
           props.isClosable && (
-            <button className="blx-modal-close" aria-label="close" onClick={props.onClose}>
+            <button className={lassnames('blx-modal-close', props.closeClassName)} aria-label="close" onClick={props.onClose}>
               <CloseIcon />
             </button>
           )
@@ -28,6 +28,8 @@ const BaseModal = (props) => {
 
 BaseModal.propTypes = {
   className: PropTypes.string,
+  closeClassName: PropTypes.string,
+  overlayClassName: PropTypes.string,
   style: PropTypes.object,
   isHidden: PropTypes.bool,
   isClosable: PropTypes.bool,
@@ -37,6 +39,8 @@ BaseModal.propTypes = {
 
 BaseModal.defaultProps = {
   className: '',
+  closeClassName: '',
+  overlayClassName: '',
   style: null,
   isHidden: true,
   isClosable: true,
